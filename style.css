@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Sour Gummy";
+    color: white;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+    background: linear-gradient(#116ff3, rgb(138, 181, 255));
+
+}
+
+#body-grid {
+    display: grid;
+   justify-items: center;
+    align-items: center;
+    margin: 10%;
+}
+
+.projects-container {
+    justify-self: left;
+}
+
+.projects-container {
+    justify-self: left;
+}
