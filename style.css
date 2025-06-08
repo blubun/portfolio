@@ -29,3 +29,26 @@ body {
 .projects-container {
     justify-self: left;
 }
+
+.card-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 60%;
+}
+
+.card {
+    display: flex;
+    
+    background: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 50px;
+}
+
+    .card p, .card h3 {
+        color: #000;        
+    }
+
+    .card img {
+        width: 100%;
+    }
