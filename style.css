@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    font-family: "Sour Gummy";
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
     color: white;
 }
 
@@ -13,6 +14,35 @@ body {
     height: 100%;
     background: linear-gradient(#116ff3, rgb(138, 181, 255));
 
+}
+
+.headline-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p.headline {
+    font-size: 50px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    margin: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.down-arrow {
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 1s;
 }
 
 #body-grid {
@@ -38,17 +68,19 @@ body {
 
 .card {
     display: flex;
-    
+    flex-direction: column;
     background: white;
     border: 2px solid white;
     border-radius: 30px;
     padding: 50px;
 }
 
-    .card p, .card h3 {
+    .card p, .card h3, .card li {
         color: #000;        
     }
 
     .card img {
         width: 100%;
+        border-radius: 30px;
     }
+
