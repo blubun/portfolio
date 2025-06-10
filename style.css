@@ -29,12 +29,18 @@ h1.headline {
     opacity: 0;
     animation: fadeIn 2s ease-in forwards;
     margin: 0;
+    text-shadow: 2px 4px 12px rgba(0,0,0,0.35);
 }
 
 .social-container {
     opacity: 0;
     animation: fadeIn 2s ease-in forwards;
     animation-delay: 2s;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+    justify-content: center;
+    width: 100%;
 }
 
 @keyframes fadeIn {
@@ -81,10 +87,18 @@ h1.headline {
     margin-bottom: 30px;
 }
 
+.work-container h2 {
+    font-size: 50px;
+    margin: 15px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
 .card-grid {
     display: grid;
     grid-template-columns: auto auto;
-    max-width: 60%;
+    max-width: 80%;
+    grid-gap: 20px;
 }
 
 .card {
@@ -94,22 +108,49 @@ h1.headline {
     border: 2px solid white;
     border-radius: 30px;
     padding: 50px;
+    width: 80%;
 }
 
-    .card p, .card h3, .card li {
+    .card p, .card h3, .card li, .card a {
         color: #000;        
     }
 
     .card img {
         width: 100%;
         border-radius: 30px;
+        margin-bottom: 20px;
+        transition: transform 0.2s ease;
     }
 
-.social-container {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 30px;
+    .card img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+
+.card-body a {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+    text-shadow: 2px 4px 12px rgba(0,0,0,0.35);
+    text-decoration: none;
 }
+
+.social-container {
+    animation: fadeIn 2s ease-in forwards;
+    animation-delay: 2s;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}
+
+.social-container a {
+    text-decoration: none;
+    font-size: 25px;
+} 
 
 .social-icon {
     width: 30px;
@@ -119,5 +160,27 @@ h1.headline {
 
 .social-icon:hover {
     transform: scale(1.2);
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.skills-list li {
+    background: rgba(17, 111, 243, 0.15);
+    color: #116ff3;
+    border-radius: 20px;
+    padding: 6px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(17, 111, 243, 0.08);
+    transition: background 0.2s, color 0.2s;
+    border: 1px solid #b3d1ff;
+    display: inline-block;
 }
 
