@@ -73,7 +73,7 @@ h1.headline {
     margin-bottom: 5%;
 }
 
-.projects-container {
+.projects-container, .work-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,6 +85,7 @@ h1.headline {
     font-size: 50px;
     margin: 15px;
     margin-bottom: 30px;
+    text-shadow: 2px 4px 12px rgba(0,0,0,0.35);
 }
 
 .work-container h2 {
@@ -92,6 +93,7 @@ h1.headline {
     margin: 15px;
     margin-bottom: 30px;
     margin-top: 50px;
+    text-shadow: 2px 4px 12px rgba(0,0,0,0.35);
 }
 
 .card-grid {
@@ -101,7 +103,16 @@ h1.headline {
     grid-gap: 20px;
 }
 
-.card {
+.experience-list{
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: auto;
+    max-width: 80%;
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.card, .experience-card {
     display: flex;
     flex-direction: column;
     background: white;
@@ -113,6 +124,37 @@ h1.headline {
 
     .card p, .card h3, .card li, .card a {
         color: #000;        
+    }
+
+    .experience-card p, .experience-card h3, .experience-card li, .experience-card a {
+        color: #000;        
+    }
+
+    .experience-details {
+        list-style: none;
+        padding: 0;
+        margin: 15px 0 0 0;
+    }
+
+    .experience-details li {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 12px;
+        line-height: 1.6;
+        font-size: 16px;
+    }
+
+    .experience-details li:before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #116ff3;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .experience-details li:last-child {
+        margin-bottom: 0;
     }
 
     .card img {
@@ -127,7 +169,7 @@ h1.headline {
         transition: transform 0.3s ease;
     }
 
-.card-body a {
+.card-body a, .experience-header h3 {
     font-size: 30px;
     margin-bottom: 10px;
     margin-top: 20px;
