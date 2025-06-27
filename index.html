@@ -12,19 +12,26 @@
         <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div id="hamburger-wrapper">
+            <div id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="social-menu" class="social-container">
+                <a class="social-icon" href="https://www.linkedin.com/in/rey-gonzalez-48b8a9189/" target="_blank">
+                    LinkedIn
+                </a>
+                <a class="social-icon" href="mailto:reyozzie23@gmail.com">
+                    Email
+                </a>
+                <a class="social-icon" href="resume/Rey Gonzalez Resume 2025.pdf" target="_blank">
+                    Resume
+                </a>
+            </div>
+        </div>
         <div id="body-grid">
             <div class="headline-container">
-                <div class="social-container">
-                    <a class="social-icon" href="https://www.linkedin.com/in/rey-gonzalez-48b8a9189/" target="_blank">
-                        LinkedIn
-                    </a>
-                    <a class="social-icon" href="mailto:reyozzie23@gmail.com">
-                        Email
-                    </a>
-                    <a class="social-icon" href="resume/Rey Gonzalez Resume 2025.pdf" target="_blank">
-                        Resume
-                    </a>
-                </div>
                 <h1 class="headline">Hello! My name is <strong>Rey Gonzalez</strong>, and I am a Web Developer.</h1>
                 <img class="down-arrow" src="icons/angle-small-down.png"></img>
             </div>
@@ -114,5 +121,14 @@
             </div>
         </div>
       
-    </body>
+    </div>
+    <script>
+        const hamburger = document.getElementById('hamburger-menu');
+        const socialMenu = document.getElementById('social-menu');
+        hamburger.addEventListener('click', () => {
+            socialMenu.classList.toggle('open');
+            hamburger.classList.toggle('open');
+        });
+    </script>
+</body>
 </html>
