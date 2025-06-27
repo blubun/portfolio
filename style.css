@@ -112,28 +112,6 @@ h1.headline {
     width: 100%;
 }
 
-@media screen and (max-width: 600px) {
-    #hamburger-wrapper {
-        top: 15px;
-        left: 15px;
-    }
-    #social-menu.social-container {
-        padding: 15px 18px;
-        gap: 15px;
-    }
-}
-
-/* Remove old .social-container styles for flex row and bottom margin */
-.social-container {
-    margin-bottom: 0 !important;
-    flex-direction: column !important;
-    gap: 0 !important;
-    width: auto !important;
-    align-items: flex-start !important;
-    justify-content: flex-start !important;
-    animation: none !important;
-}
-
 .down-arrow {
     width: 150px;
     height: 150px;
@@ -314,5 +292,16 @@ h1.headline {
         border: 2px solid white;
         border-radius: 30px;
         padding: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #hamburger-wrapper {
+        top: 15px;
+        left: 15px;
+    }
+    #social-menu.social-container {
+        padding: 15px 18px;
+        gap: 15px;
     }
 }
